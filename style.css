@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.clock-container {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.clock {
+    margin-bottom: 30px;
+}
+
+.time {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #00ff41;
+    text-shadow: 0 0 10px #00ff41, 0 0 20px #00ff41;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+}
+
+.date {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.day {
+    font-size: 1.5rem;
+    color: #cccccc;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.settings {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.format-btn {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.format-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.format-btn.active {
+    background: #00ff41;
+    color: black;
+    border-color: #00ff41;
+    font-weight: bold;
+}
+
+.timezone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.timezone label {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.timezone select {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 300px;
+    cursor: pointer;
+}
+
+.timezone select option {
+    background: #333;
+}
+
+@media (max-width: 600px) {
+    .time {
+        font-size: 3.5rem;
+    }
+    
+    .date {
+        font-size: 1.5rem;
+    }
+    
+    .day {
+        font-size: 1.2rem;
+    }
+    
+    .settings {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .format-btn {
+        width: 100%;
+    }
+}
