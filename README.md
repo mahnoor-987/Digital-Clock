@@ -29,4 +29,4 @@ A modern, responsive digital clock with timezone support and multiple display fo
    - **Change Time Format**: Click the "12-Hour Format" or "24-Hour Format" buttons
    - **Change Timezone**: Select a different timezone from the dropdown menu
 
-## File Structure
+
